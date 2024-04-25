@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
       <h1>
-        <a href="/">토익 영단어</a>
+        <Link to={"/"}>토익 영단어</Link>
       </h1>
       <div className="menu">
         <a href="#x" className="link">
