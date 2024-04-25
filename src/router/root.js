@@ -15,13 +15,12 @@ const root = createBrowserRouter([
     ),
   },
   {
-    path: "/day",
+    path: "/day/:day",
     element: (
       <Suspense>
         <Day />
       </Suspense>
     ),
-    children: dayRouter(),
   },
 ]);
 
