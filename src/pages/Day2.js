@@ -6,15 +6,18 @@ export default function Day2() {
   const wordlist = data.words.filter((word) => word.day === day);
 
   return (
-    <table>
-      <tbody>
-        {wordlist.map((word) => (
-          <tr key={word.id}>
-            <td>{word.eng}</td>
-            <td>{word.kor}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <>
+      <h2>Day {day}</h2>
+      <table>
+        <tbody>
+          {wordlist.map((word) => (
+            <tr key={word.id}>
+              <td>{word.eng}</td>
+              <td>{word.kor}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 }
