@@ -7,7 +7,7 @@ export default function Day3() {
 
   return (
     <>
-      <h3>Day {day}</h3>
+      <h2>Day {day}</h2>
       <table>
         <tbody>
           {wordlist.map((word) => (
