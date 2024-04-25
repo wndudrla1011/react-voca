@@ -1,7 +1,8 @@
 import React from "react";
-import { Outlet, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BasicLayout from "../layouts/BasicLayout";
 import data from "../db/data.json";
+import Word from "../components/Word";
 
 function Day() {
   const { day } = useParams();
@@ -14,10 +15,7 @@ function Day() {
         <table>
           <tbody>
             {wordlist.map((word) => (
-              <tr key={word.id}>
-                <td>{word.eng}</td>
-                <td>{word.kor}</td>
-              </tr>
+              <Word word={word} key={word.id} />
             ))}
           </tbody>
         </table>
