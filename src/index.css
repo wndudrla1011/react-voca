@@ -135,3 +135,14 @@ button {
   height: 40px;
   font-size: 20px;
 }
+
+.back-button {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: red;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 5px;
+}
