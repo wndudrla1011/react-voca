@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 const Day = lazy(() => import("../pages/Day"));
 const Main = lazy(() => import("../pages/Main"));
+const Empty = lazy(() => import("../pages/Empty"));
 
 const root = createBrowserRouter([
   {
@@ -18,6 +19,14 @@ const root = createBrowserRouter([
     element: (
       <Suspense>
         <Day />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/*",
+    element: (
+      <Suspense>
+        <Empty />
       </Suspense>
     ),
   },
