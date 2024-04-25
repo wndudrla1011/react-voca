@@ -10,7 +10,7 @@ function Word({ word }) {
   return (
     <tr key={word.id}>
       <td>
-        <input type="checkbox" />
+        <input type="checkbox" checked={word.isDone} />
       </td>
       <td>{word.eng}</td>
       <td>{isShow && word.kor}</td>
